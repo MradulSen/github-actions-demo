@@ -28,6 +28,7 @@ jobs:
       - name: Build and Push
         uses: docker/build-push-action@v6
         with:
-          context: C:\Users\Admin\Documents\GITHUB-ACTIONS\github-actions-kubernetes-masterclass\backend\Dockerfile
+          context: ./backend
+          file: ./backend/Dockerfile
           push: true
           tags: mradulsen/skillpulse-backend:latest
